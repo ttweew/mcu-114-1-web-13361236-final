@@ -13,144 +13,129 @@
         <div class="logo">
           <a href="#home">Portfolio</a>
         </div>
-
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#home" class="nav-link">首頁</a></li>
-            <li><a href="#about" class="nav-link">關於我</a></li>
-            <li><a href="#skills" class="nav-link">技術</a></li>
-            <li><a href="#portfolio-section" class="nav-link">作品集</a></li>
-          </ul>
-        </nav>
-
         <div class="header-actions">
-          <a href="#" class="download-btn"> 下載履歷 <i class="fa-solid fa-download"></i> </a>
+          <a href="#" class="download-btn">下載履歷 <i class="fa-solid fa-download"></i></a>
         </div>
       </div>
     </header>
 
-    <main>
-      <section id="home" class="hero-section">
-        <div class="hero-content">
-          <p class="subtitle">田明祐</p>
-          <h1>我是全端工程師</h1>
-          <p>這是一個範例文字，可以介紹您的專業和專長。</p>
-          <div
-            class="image-placeholder"
-            style="width: 200px; height: 200px; border-radius: 50%; background-color: #e0e0e0; margin-top: 20px"
-          ></div>
-          <div class="hero-actions">
-            <a href="#about" class="btn btn-primary">了解更多</a>
-            <a href="#portfolio-section" class="btn btn-secondary">我的作品</a>
-          </div>
-
-          <div class="social-icons">
-            <a href="#" target="_blank" class="icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" target="_blank" class="icon-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank" class="icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank" class="icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
+    <header>
+      <nav>
+        <div id="menu" class="nav-menu">
+          <a href="#section1">首頁</a>
+          <a href="#section2">關於我</a>
+          <a href="#section2">技術</a>
+          <a href="#section3">作品集</a>
         </div>
-      </section>
+      </nav>
+    </header>
 
-      <section id="about" class="about-section">
-        <h2>關於我</h2>
-        <p>第一次接觸網頁設計，過程也很辛苦很難度，但我還是努力學習。</p>
-        <div class="about-content">
-          <div class="description">
-            <h3>自我介紹</h3>
-            <p>我學習果前端技術（HTML、CSS、JavaScript）。</p>
-          </div>
-          <div class="timeline">
-            <h3>教育程度</h3>
-            <ul>
-              <li><span class="dot"></span> 錦和高中 <span class="date">2020年 - 2023年</span></li>
-              <li><span class="dot"></span> 銘傳大學 <span class="date">2024年 - 2026年</span></li>
-            </ul>
-          </div>
+    <div id="section1" class="section" style="background-color: transparent">
+      <h1>我是全端工程師</h1>
+      <p>這是一個範例文字，可以介紹您的專業和背景。</p>
+      <div class="profile-circle"></div>
+      <p><a href="#">了解更多 我的作品</a></p>
+    </div>
+
+    <div id="section2" class="section" style="background-color: transparent">
+      <h2>關於我</h2>
+      <p>第一次接觸網頁設計，想把任何辛苦都看作是很棒的學習，但我還是努力學習。</p>
+      <h2>技術</h2>
+      <p>以下是我的技能熟練度：</p>
+      <div class="skills">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress-bar" style="width: 90%"></div>
         </div>
-      </section>
-
-      <section id="skills" class="skills-section">
-        <h2>技術</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
-        <div class="skills">
-          <div class="skill">
-            <span>Git</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <span>JavaScript</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 60%"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <span>Java</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 50%"></div>
-            </div>
-          </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress-bar" style="width: 80%"></div>
         </div>
-      </section>
-
-      <section id="portfolio-section" class="portfolio-section">
-        <h2>作品集</h2>
-        <p>我的作品集</p>
-        <div class="portfolio">
-          <div class="card">
-            <h3><a href="portfolio1.html" target="_blank">作品1</a></h3>
-            <p>這是作品的描述文字。</p>
-          </div>
-          <div class="card">
-            <h3>作品2</h3>
-            <p>這是作品的描述文字。</p>
-          </div>
-          <div class="card">
-            <h3>作品3</h3>
-            <p>這是作品的描述文字。</p>
-          </div>
-          <div class="card">
-            <h3>作品4</h3>
-            <p>這是作品的描述文字。</p>
-          </div>
-          <div class="card">
-            <h3>作品5</h3>
-            <p>這是作品的描述文字。</p>
-          </div>
-          <div class="card">
-            <h3>作品6</h3>
-            <p>這是作品的描述文字。</p>
-          </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar" style="width: 70%"></div>
         </div>
-      </section>
-    </main>
+        <div class="skill">
+          <span>Git</span>
+          <div class="progress-bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <h2>教育程度</h2>
+      <ul>
+        <li>全端工程 2024年 - 2023年</li>
+        <li>後端工程 2024年 - 2026年</li>
+      </ul>
+    </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
+    <div id="section3" class="section" style="background-color: transparent">
+      <h2>作品集</h2>
+      <ul>
+        <li><a href="project1.html">作品集 1</a></li>
+        <li><a href="#">作品集 2</a></li>
+        <li><a href="#">作品集 3</a></li>
+        <li><a href="#">作品集 4</a></li>
+        <li><a href="#">作品集 5</a></li>
+        <li><a href="#">作品集 6</a></li>
+      </ul>
+    </div>
 
-        window.addEventListener("scroll", () => {
-          let current = "";
+    <script src="src/main.js"></script>
 
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 50;
-            if (window.scrollY >= sectionTop) {
-              current = section.getAttribute("id");
-            }
-          });
+    <style>
+      .section {
+        height: 100vh;
+        padding: 20px;
+      }
 
-          navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").includes(current)) {
-              link.classList.add("active");
-            }
-          });
-        });
-      });
-    </script>
+      .profile-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: black;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-right: 20px;
+      }
+
+      .skills {
+        margin-top: 20px;
+      }
+
+      .skill {
+        margin-bottom: 10px;
+      }
+
+      .skill span {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .progress-bar {
+        height: 10px;
+        background-color: #007bff;
+        border-radius: 5px;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .nav-menu a:hover {
+        color: #007bff;
+      }
+    </style>
   </body>
 </html>

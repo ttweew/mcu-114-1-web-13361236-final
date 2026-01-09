@@ -192,4 +192,26 @@ h1 {
   transform: translateY(-2px);
 }
 
+/* --- Navigation Menu Styles --- */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+}
+
+.nav-menu.responsive {
+  flex-direction: column;
+}
+
+.nav-menu a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
 /* 確保您編譯了這個檔案到 dist/css/style.min.css */
