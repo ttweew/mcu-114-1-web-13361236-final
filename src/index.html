@@ -20,8 +20,9 @@
     </header>
 
     <header>
-      <nav>
-        <div id="menu" class="nav-menu">
+      <nav class="nav-bar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-menu">
           <a href="#section1">首頁</a>
           <a href="#section2">關於我</a>
           <a href="#section2">技術</a>
@@ -82,9 +83,45 @@
     <script src="src/main.js"></script>
 
     <style>
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-right: auto;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 15px;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .nav-menu a:hover {
+        color: #007bff;
+      }
+
       .section {
         height: 100vh;
         padding: 20px;
+        margin-top: 70px; /* Adjust for fixed nav-bar */
       }
 
       .profile-circle {
@@ -92,13 +129,6 @@
         height: 150px;
         border-radius: 50%;
         background-color: black;
-      }
-
-      .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        margin-right: 20px;
       }
 
       .skills {
@@ -121,20 +151,23 @@
         border-radius: 5px;
       }
 
-      .nav-menu {
-        display: flex;
-        gap: 15px;
-        align-items: center;
-      }
+      @media (max-width: 768px) {
+        .nav-menu {
+          flex-direction: column;
+          gap: 10px;
+        }
 
-      .nav-menu a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-      }
+        .section {
+          padding: 10px;
+        }
 
-      .nav-menu a:hover {
-        color: #007bff;
+        .skills .skill span {
+          font-size: 14px;
+        }
+
+        .progress-bar {
+          height: 8px;
+        }
       }
     </style>
   </body>
