@@ -1,11 +1,9 @@
-/* --- Font & Base Styles --- */
 body {
   font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   line-height: 1.6;
   color: #4a4a4a;
 }
 
-/* --- Header/Navigation Styles --- */
 .site-header {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -23,7 +21,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px; /* 更新間距 */
+  padding: 0 30px;
 }
 
 .logo a {
@@ -31,7 +29,7 @@ body {
   font-weight: bold;
   color: #4a4a4a;
   text-decoration: none;
-  letter-spacing: 1px; /* 更新字體間距 */
+  letter-spacing: 1px;
 }
 
 .main-nav ul {
@@ -48,14 +46,13 @@ body {
 .nav-link {
   text-decoration: none;
   color: #7f8c8d;
-  padding: 10px 15px; /* 更新間距 */
+  padding: 10px 15px;
   transition: color 0.3s ease;
-  letter-spacing: 0.5px; /* 更新字體間距 */
+  letter-spacing: 0.5px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  /* 新增 :focus 效果 */
   color: #3498db;
 }
 
@@ -68,12 +65,11 @@ body {
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
-  letter-spacing: 0.8px; /* 更新字體間距 */
+  letter-spacing: 0.8px;
 }
 
 .download-btn:hover,
 .download-btn:focus {
-  /* 新增 :focus 效果 */
   background-color: #8e44ad;
 }
 
@@ -81,12 +77,11 @@ body {
   margin-left: 8px;
 }
 
-/* --- Main Content / Hero Section Styles --- */
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 150px 30px 20px 30px; /* 更新間距 */
+  padding: 150px 30px 20px 30px;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 80vh;
@@ -110,18 +105,17 @@ body {
 }
 
 h1 {
-  font-size: 56px; /* 更新字體大小 */
+  font-size: 56px;
   margin: 0 0 20px 0;
   color: #333;
-  letter-spacing: 1px; /* 更新字體間距 */
+  letter-spacing: 1px;
 }
 
 .hero-content p {
-  letter-spacing: 0.5px; /* 更新字體間距 */
-  margin-bottom: 25px; /* 更新間距 */
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
 }
 
-/* --- 新增按鈕樣式 --- */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -130,7 +124,7 @@ h1 {
   font-weight: bold;
   margin-right: 10px;
   transition: transform 0.2s ease, background-color 0.3s ease;
-  letter-spacing: 0.8px; /* 更新字體間距 */
+  letter-spacing: 0.8px;
 }
 
 .btn-primary {
@@ -140,7 +134,6 @@ h1 {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  /* 新增 :focus 效果 */
   background-color: #8e44ad;
   transform: translateY(-2px);
 }
@@ -153,7 +146,6 @@ h1 {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  /* 新增 :focus 效果 */
   background-color: #9b59b6;
   color: white;
   transform: translateY(-2px);
@@ -164,7 +156,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* --- 新增社交圖標樣式 (圓框+陰影) --- */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -186,13 +177,11 @@ h1 {
 
 .icon-link:hover,
 .icon-link:focus {
-  /* 新增 :focus 效果 */
   color: #3498db;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
-/* --- Navigation Menu Styles --- */
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -213,5 +202,3 @@ h1 {
   color: #007bff;
   font-weight: bold;
 }
-
-/* 確保您編譯了這個檔案到 dist/css/style.min.css */
