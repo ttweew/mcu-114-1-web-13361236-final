@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile SCSS to CSS",
+      "type": "shell",
+      "command": "npx",
+      "args": ["sass", "src/main/_index.scss:dist/css/style.min.css", "--style=compressed"],
+      "isBackground": false,
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}

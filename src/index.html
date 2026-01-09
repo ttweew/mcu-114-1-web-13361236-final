@@ -35,6 +35,10 @@
           <p class="subtitle">田明祐</p>
           <h1>我是全端工程師</h1>
           <p>這是一個範例文字，可以介紹您的專業和專長。</p>
+          <div
+            class="image-placeholder"
+            style="width: 200px; height: 200px; border-radius: 50%; background-color: #e0e0e0; margin-top: 20px"
+          ></div>
           <div class="hero-actions">
             <a href="#about" class="btn btn-primary">了解更多</a>
             <a href="#portfolio-section" class="btn btn-secondary">我的作品</a>
@@ -48,6 +52,85 @@
           </div>
         </div>
       </section>
+
+      <section id="about" class="about-section">
+        <h2>關於我</h2>
+        <p>第一次接觸網頁設計，過程也很辛苦很難度，但我還是努力學習。</p>
+        <div class="about-content">
+          <div class="description">
+            <h3>自我介紹</h3>
+            <p>我學習果前端技術（HTML、CSS、JavaScript）。</p>
+          </div>
+          <div class="timeline">
+            <h3>教育程度</h3>
+            <ul>
+              <li><span class="dot"></span> 錦和高中 <span class="date">2020年 - 2023年</span></li>
+              <li><span class="dot"></span> 銘傳大學 <span class="date">2024年 - 2026年</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2>技術</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore!</p>
+        <div class="skills">
+          <div class="skill">
+            <span>Git</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Java</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio-section" class="portfolio-section">
+        <h2>作品集</h2>
+        <p>我的作品集</p>
+        <div class="portfolio">
+          <div class="card">作品1</div>
+          <div class="card">作品2</div>
+          <div class="card">作品3</div>
+          <div class="card">作品4</div>
+        </div>
+      </section>
     </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+          let current = "";
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 50;
+            if (window.scrollY >= sectionTop) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+              link.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
