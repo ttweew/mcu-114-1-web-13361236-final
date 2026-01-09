@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/src"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["/src/assets/code/**"],
+  "liveSassCompile.settings.showOutputWindowOn": "Debug"
+}
